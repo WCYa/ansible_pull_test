@@ -2,6 +2,8 @@
   connection: lcoal
   become: true
   tasks:
-  - name: Install htop
+  - name: Install packages
     dnf:
-      name: htop
+      name:
+       - htop
+       - mc
