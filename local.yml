@@ -1,0 +1,7 @@
+- hosts: localhost
+  connection: lcoal
+  become: true
+  tasks:
+  - name: Install htop
+    dnf:
+      name: htop
